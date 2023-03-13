@@ -1,0 +1,5 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Disallow:
+
+# this is to tell robots such as the ones used by Google Search Engine how to treat your websites

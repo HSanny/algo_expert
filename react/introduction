@@ -1,0 +1,34 @@
+ Vanilla programming : vanilla refers to pure / plain, in terms of programming languages, vanilla programming means either without the use of 3rd party libraries or without the use of frameworks.
+ 
+ React: a JavaScript library for building User Interface.
+ - React is declarative, meaning it describes what the UI should look like, not all of the implementation details
+ - React is component-based, meaning it uses components that are re-usable pieces of UI, like we are building our own custom HTML tags
+ - React has uni-directional data flow, meaning it responds to changes of data, and the data flows in 1 direction
+
+ JXS: JavaScript XML, a JavaScript syntax extension for inlining HTML
+ - inline elements are those which only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content.
+ - an inline element does not start on a new line & only takes up as much width as necessary.
+ - e.g. : const hello = <p> Hello World </p>;
+ 
+ ReactDOM: A package used with React
+ - work as the bridge between React element & actual DOM in browser
+ - e.g. : ReactDOM.render(element, DOMContainer) , oftentimes `DOMContainer` is seen as just an empty div, serve as the root of the application, it can be a deeper nested DOM Container when you only want part of the page to be using React
+ - e.g. : ReactDOM.render(
+            <h1>Hellow World!<h1>
+            document.getElementById(`root`)
+        );
+
+Functional Compoenents: A function that returns a react element(JSX)
+- e.g. : function SayHello() {
+            return <p>Hello World</p>;
+         }
+         function App() {
+            return (
+                <div>
+                    <SayHello />
+                    <p>Welcome to React !</p>
+                </div>
+            )
+         }
+
+webpack : 
